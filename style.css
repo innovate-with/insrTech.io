@@ -1,0 +1,292 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Choose a clean, modern font */
+    background-color: #f5f5f5; /* Light background for better readability */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* .header {
+    background-color: violet;
+    padding: 0;
+    text-align: left;
+    height: auto; 
+  } */
+  
+  /* Styles for logo (outside container) */
+  .logo {
+    position: fixed; /* Fix the logo to the top left corner */
+    top: 5x; /* Adjust the top position as needed */
+    left: 0px; /* Adjust the left position as needed */
+    max-width: 150px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 999; /* Ensure logo stays on top of other elements */
+  }
+  
+  /* Styles for navigation (outside container) */
+  .navigation {
+    position: fixed; /* Fix the navigation to the top right corner */
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    z-index: 999; /* Ensure navigation stays on top of other elements */
+  }
+  
+  .navigation ul {
+    display: flex; /* Arrange navigation items horizontally */
+  }
+  
+  .navigation ul li {
+    display: inline-block;
+    margin-left: 20px; /* Add some spacing between navigation items */
+  }
+  
+  .navigation ul li a {
+    color: #fff; /* Assuming navigation text is white */
+    text-decoration: none; /* Changed from 'sans-serif' to 'none' assuming you don't want any underline */
+    /* font-family: sans-serif; Set font family to sans-serif */
+    font-family:'Trebuchet MS';/* Set font style to sans-serif */
+    font-size: 18px;
+    font:bolder;
+  }
+  
+  .navigation ul li a:hover {
+    color: #fff; /* Change color on hover if needed */
+    text-decoration: underline; /* Underline on hover if needed */
+  }
+  
+  
+.tagline {
+    font-size: 18px;
+}
+  
+h1, h2 {
+    font-family: 'Montserrat', sans-serif; /* Bold heading font */
+    margin-bottom: 10px;
+}
+  
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+  
+.hero {
+    background-image: url("hero-image.jpg"); /* Replace with your desired hero image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+}
+  
+.hero h2 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family:'Segoe UI';
+  }
+
+  .hero p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family:'Courier New';
+  }
+  
+.hero-btn {
+    background-color: #333; /* Green color for call to action buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.hero-btn:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+  
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.services h2 {
+    font-size: 24px;
+    text-align: center; /* Center the heading text */
+    color: #fff;
+    font-family:'Gill Sans MT';
+}
+
+.service-container {
+    display: flex;  /* Enable flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow services to wrap to multiple lines if needed */
+    justify-content: space-around; /* Distribute services evenly */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+  
+.service {
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 10px;
+    color: #fff;
+}
+  
+.service p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    font-family:'Courier New';
+}
+  
+.service:hover {
+    transform: scale(1.05); /* Subtle hover scale effect */
+}
+
+.maintenance-service {
+    height: 100px;
+    width: 100px;
+}
+
+.backend-service {
+    height: 100px;
+    width: 100px;
+}
+
+.security-icon {
+    height: 100px;
+    width: 100px;
+}
+  
+.about {
+    padding: 50px 0;
+    text-align: center
+}
+
+.about h2 {
+    font-family:'Gill Sans MT';
+    color: #fff;
+
+}
+  
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #fff;
+    font-family:'Courier New';
+}
+
+.about-btn {
+    background-color: #333; /* Green color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.about-btn:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+  
+.footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p{
+    color: #fff;
+    text-align: center;
+}
+
+  /* Styles for the form popup */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+  
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+  
+.form-container h2 {
+    margin-bottom: 20px;
+}
+  
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.form-container textarea {
+    resize: vertical;
+}
+  
+.form-container .submit-btn,
+.form-container .close-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.form-container .submit-btn:hover,
+.form-container .close-btn:hover {
+    background-color: #45a049;
+}
